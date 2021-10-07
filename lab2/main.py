@@ -1,9 +1,18 @@
 def print_menu():
-    pass
+    """
+    Displays the choices the user has to the console
+    :return:
+    """
+    print("1 - Find all odd elements")
+    print("0 - Exit")
 
 
 def read_command():
-    return 0
+    """
+    Reads the user choice from the console
+    :return:
+    """
+    return int(input("Enter command: "))
 
 
 def ui():
