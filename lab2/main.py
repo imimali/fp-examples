@@ -21,11 +21,15 @@ def find_odd(elements):
     :param elements: list of integer numbers
     :return: a list with all odd numbers from elements
     """
-    return []
+    result = []
+    for elem in elements:
+        result.append(elem)
+    return result
 
 
 def test_find_odd():
     assert find_odd([]) == []
+    assert find_odd([1, 3]) == [1, 3]
 
 
 def ui():
