@@ -23,13 +23,18 @@ def find_odd(elements):
     """
     result = []
     for elem in elements:
-        result.append(elem)
+        if elem % 2 == 1:
+            result.append(elem)
     return result
 
 
 def test_find_odd():
     assert find_odd([]) == []
     assert find_odd([1, 3]) == [1, 3]
+    assert find_odd([1, 2, 3]) == [1, 3]
+    assert find_odd([2, 4, 6, 8]) == []
+    assert find_odd([1, 2, 3, 4, 5, 6]) == [1, 3, 5]
+    print("Tests passed :)")
 
 
 def ui():
@@ -46,4 +51,5 @@ def ui():
 
 
 if __name__ == '__main__':
+    test_find_odd()
     ui()
